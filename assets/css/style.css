@@ -6,52 +6,88 @@
 
 
 /* start of header attributes */
+body {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
 
 .header {
-    padding: 20px;
+    display: flex;
     width: 100%;
+    flex-wrap: wrap;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: navy;
+    background-color: lightseagreen;
     color: white;
+    margin: 0;
 }
 
 .header h1 {
-    display: inline-block;
-    font-size: 48px;
+    font-weight: bold;
+    display: inherit;
+    margin:0;
+    font-size: 36px;
+    color: white;
+    width: 100%;
+    padding: 25px 0 0 50px;
 }
 
 .header nav {
-    padding-top: 20px;
-    margin-right: 15px;
-    float: right;
+    margin: 0 0 0 200px;
+    display: inline-flex;
+    flex: wrap;
+    float: center right inline-end;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
+    color: white;
 }
 
 .header nav ul {
     list-style: none;
+    display: inherit;
+    position: right center;
+    flex-wrap: wrap;
+    padding: 5px 5px 5px 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .header nav ul li {
-    display: inline-block;
-    margin-left: 25px;
+    display: inline-flex;
+    margin: 0;
+    padding: 25px;
+    flex-wrap: wrap;
 }
 
 /* start of hero */
 
-.hero {
-    background-image: url(../images/PivotalSaintLogo.jpg);
-    height: 600px;
-    background-size: cover;
-    background-position: center;
+.body {
+    background-color: navajowhite;
     position: relative;
 }
 
-.hero title {
+.hero {
+    background-image: url(../images/PivotalSaintLogo.jpg);
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 0 0 0 0;
+}
+
+.hero h1 {
     float: right;
     text-align: right;
     font-size: 24px;
-    color: white;
+    color: lightseagreen;
+    position: bottom;
+    padding: 400px 25px 0 0;
+    margin: 0;
 }
 
 a { 
@@ -59,35 +95,84 @@ a {
 }
 
 p {
-    font-size: 24px;
+    font-size: 14px;
 }
 
-footer {
-    background: black;
+.about-the-author {
+    display: inline-flex;
+    border: solid;
+    flex-wrap: wrap;
+    border: solid;
+    border-width: 6px;
     width: 100%;
-    margin-bottom: 0;
-    padding: 40px 45px;
+    padding: 2px;
+    background-color: lightseagreen;
 }
 
-footer h2 {
-    display: inline;
-    color: white;
-    font-size: 48px;
+.headshot {
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+
+
+.portfolio-work {
     margin: 0;
+    align-items: center;
+    border: solid;
+    border-width: 6px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center space-around space-evenly; 
 }
 
-footer h1 {
-    float: left center;
-    line-height: 1.5;
-    text-align: left;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.smaller-project {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 400px;
+    border: 2px black solid;
+}
+
+.smallimages {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.footer {
+    position: absolute center;
+    background: lightseagreen;
+    width: 100%;
+    margin: 0;
+    border: solid;
+    border-width: 6px;
+    border-color: black;
+}
+
+.footer div {
+    position: center;
+    font-size: 24px;
+    width: 100%
+}
+
+.footer p {
+    flex: 1;
+}
+
+.email {
+
+}
+
+.footer h1 {
+    flex: wrap;
+    text-align: center;
     font-size: 36px;
 }
 
-footer h1 {
+.footer h1 {
     color: white;
 
 }
-section {
-    padding: 60px;
-}
+
+@media screen and (max-width: 980px){
+    }
