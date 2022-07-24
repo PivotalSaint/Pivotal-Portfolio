@@ -99,22 +99,30 @@ p {
 }
 
 .about-the-author {
-    display: inline-flex;
-    border: solid;
-    flex-wrap: wrap;
+    display: inline-block;
     border: solid;
     border-width: 6px;
     width: 100%;
-    padding: 2px;
+    padding: 4px;
     background-color: lightseagreen;
 }
 
+.bio {
+    display: inline-flex;
+    flex-wrap: wrap;
+    display: inline;
+}
+
 .headshot {
-    flex: 1;
+    display: flex;
     flex-wrap: wrap;
 }
 
-
+.project-header {
+    display: inline-block;
+    position: center;
+    font-size: 36px;
+}
 
 .portfolio-work {
     margin: 0;
@@ -123,7 +131,14 @@ p {
     border-width: 6px;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center space-around space-evenly; 
+    justify-content: space-around; 
+}
+
+.bigger-project {
+    flex: wrap;
+    flex-wrap: wrap;
+    flex: 1;
+
 }
 
 .smaller-project {
@@ -131,7 +146,9 @@ p {
     flex-wrap: wrap;
     width: 400px;
     height: 400px;
+    padding: 10px 10px 10px 10px;
     border: 2px black solid;
+    background-color: black;
 }
 
 .smallimages {
@@ -140,7 +157,7 @@ p {
 }
 
 .footer {
-    position: absolute center;
+    position: center;
     background: lightseagreen;
     width: 100%;
     margin: 0;
@@ -157,10 +174,6 @@ p {
 
 .footer p {
     flex: 1;
-}
-
-.email {
-
 }
 
 .footer h1 {
