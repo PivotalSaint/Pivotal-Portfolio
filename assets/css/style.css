@@ -102,6 +102,7 @@ p {
     display: inline-block;
     border: solid;
     border-width: 6px;
+    text-align: right center;
     width: 100%;
     padding: 4px;
     background-color: lightseagreen;
@@ -130,30 +131,33 @@ p {
     border: solid;
     border-width: 6px;
     flex-wrap: wrap;
-    flex-direction: row;
     justify-content: space-around; 
 }
 
 .bigger-project {
     flex: wrap;
-    flex-wrap: wrap;
-    flex: 1;
-
+    flex-wrap: wrap center;
 }
 
 .smaller-project {
     display: flex;
     flex-wrap: wrap;
-    width: 400px;
-    height: 400px;
-    padding: 10px 10px 10px 10px;
-    border: 2px black solid;
-    background-color: black;
+    justify-content:space-evenly;
+    min-width: 200px;
+    width: 100%;
+    height: 100%;
+    margin: 4px 4px 4px 4px;
 }
 
 .smallimages {
-    max-width: 100%;
-    max-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+    max-height: 400px;
+    margin-top: 4px;
+    margin-left: 4px;
+    margin-bottom: 4px;
+    margin-right: 4px;
 }
 
 .footer {
