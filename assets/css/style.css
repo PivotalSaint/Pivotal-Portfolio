@@ -25,6 +25,9 @@ body {
     background-color: lightseagreen;
     color: white;
     margin: 0;
+    border: solid;
+    border-width: 6px 6px 0 6px;
+
 }
 
 .header h1 {
@@ -77,6 +80,9 @@ body {
     background-size: cover;
     background-position: center;
     position: relative;
+    border: solid;
+    border-width: 6px 6px 3px 6px;
+    border-color: white;
     padding: 0 0 0 0;
 }
 
@@ -101,6 +107,7 @@ p {
 .about-the-author {
     display: inline-block;
     border: solid;
+    border-color: white;
     border-width: 6px;
     text-align: right center;
     width: 100%;
@@ -109,14 +116,26 @@ p {
 }
 
 .bio {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
-    display: inline;
+    justify-content: space-evenly;
+    position: relative;
 }
 
 .headshot {
     display: flex;
     flex-wrap: wrap;
+}
+
+.headshot-image {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 4px;
+    margin-left: 4px;
+    margin-bottom: 4px;
+    margin-right: 4px;
 }
 
 .project-header {
@@ -129,14 +148,31 @@ p {
     margin: 0;
     align-items: center;
     border: solid;
-    border-width: 6px;
+    border-color: white;
+    border-width: 0 6px 3px 6px;
     flex-wrap: wrap;
     justify-content: space-around; 
 }
 
 .bigger-project {
-    flex: wrap;
-    flex-wrap: wrap center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    min-width: 400px;
+    width: 100%;
+    height: 100%;
+    margin: 4px 4px 4px 4px;
+}
+
+.bigimage {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    max-height: 600px;
+    margin-top: 4px;
+    margin-left: 4px;
+    margin-bottom: 4px;
+    margin-right: 4px;
 }
 
 .smaller-project {
@@ -167,7 +203,7 @@ p {
     margin: 0;
     border: solid;
     border-width: 6px;
-    border-color: black;
+    border-color: white;
 }
 
 .footer div {
@@ -191,5 +227,31 @@ p {
 
 }
 
-@media screen and (max-width: 980px){
+@media screen and (max-width: 801px) {
+    .bigimage {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 400px;
+        max-height: 400px;
+        margin-top: 4px;
+        margin-left: 4px;
+        margin-bottom: 4px;
+        margin-right: 4px;
+        border: solid;
+        border-color: white;
+        border-width: 2px 2px 2px 2px;
     }
+}
+
+@media screen and (max-width: 801px) {
+    .headshot {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 200px;
+        max-height: 200px;
+        margin-top: 4px;
+        margin-left: 4px;
+        margin-bottom: 4px;
+        margin-right: 4px;
+    }
+}
