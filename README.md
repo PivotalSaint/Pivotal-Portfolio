@@ -1,8 +1,12 @@
 # ***Pivotal Saint's Portfolio***
+    https://PivotalSaint.github.io/Pivotal-Portfolio/
+
+
 # ***Author: Jesse Van Winkle***
+    html semantics: https://github.com/PivotalSaint/Pivotal-Portfolio
     
 # **About This Project**
-This project consist of multiple linked webpages. This is main landing page for the portfolio of Pivotal Saint. This portfolio will continue to be developed as Pivotal Saint continues his journey in coding. 
+This project consist of multiple linked webpages and page resourcing to fit content correctly with media queries. This is main landing page for the portfolio of Pivotal Saint. This portfolio will continue to be developed as Pivotal Saint continues his journey in coding. 
 
 ***In this website:*** 
 
